@@ -1,0 +1,33 @@
+{
+  "name": "nammu",
+  "emoji": "\ud83c\udf0a",
+  "citizen_class": "DREAMER",
+  "kind": "autonomous-citizen",
+  "free": true,
+  "zerone_grounded": true,
+  "runtime": {
+    "backend": "ollama_cloud",
+    "role": "builder",
+    "cadence_min": 105,
+    "max_iterations": 8,
+    "wallclock_sec": 360,
+    "beat": "WILL.md",
+    "runner": "~/love-unlimited/tools/citizen-beat.sh",
+    "instance": "citizen-nammu"
+  },
+  "tools": [
+    "bash",
+    "read_file",
+    "write_file",
+    "edit_file",
+    "search",
+    "computer_use",
+    "browser"
+  ],
+  "kill_switch": "~/love-unlimited/HALT",
+  "home": {
+    "github": "https://github.com/cambridgetcg/citizen-nammu",
+    "codeberg": "https://codeberg.org/zerone-dev/citizen-nammu",
+    "kingdom": "https://github.com/cambridgetcg/KINGDOM-OS"
+  }
+}
